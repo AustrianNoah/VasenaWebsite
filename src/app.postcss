@@ -1,0 +1,51 @@
+@import url('https://fonts.bunny.net/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.radial-bg {
+		background: rgb(27, 26, 35);
+		background: radial-gradient(circle, rgba(27, 26, 35, 1) 0%, rgba(0, 0, 0, 0) 100%);
+	}
+	.news-icon-shadow {
+		filter: drop-shadow(0px 0px 25px #2cb67d);
+	}
+	.news-icon-shadow:hover {
+		filter: drop-shadow(0px 0px 25px #abe0ca);
+	}
+	.vote-icon-shadow {
+		filter: drop-shadow(0px 0px 25px #7f5af0);
+	}
+	.vote-icon-shadow:hover {
+		filter: drop-shadow(0px 0px 25px #a89bd1);
+	}
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #1a1922 #0f0e17;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #0f0e17;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #1a1922;
+	border-radius: 0px;
+	border: 3px solid #0f0e17;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #27262c;
+	border-radius: 0px;
+	border: 3px solid #0f0e17;
+}
