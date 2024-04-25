@@ -1,0 +1,39 @@
+{
+  "name": "vasenaweb",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write .",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "^2.5.7",
+    "@types/node": "^20.12.7",
+    "autoprefixer": "^10.4.19",
+    "dayjs": "^1.11.10",
+    "eslint": "^9.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-svelte": "^2.38.0",
+    "pocketbase": "^0.21.2",
+    "postcss-load-config": "^5.0.3",
+    "prettier": "^3.2.5",
+    "prettier-plugin-svelte": "^3.2.3",
+    "svelte": "^4.2.15",
+    "svelte-check": "^3.7.0",
+    "svelte-preprocess": "^5.1.4",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.10"
+  }
+}
